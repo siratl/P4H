@@ -1,0 +1,54 @@
+// Landing Page
+
+body {
+    background-image: url("/img/background.jpg");
+    width: 100%;
+
+    .container {
+        flex-direction: row;
+
+
+        .main-header {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+            padding-top: 40px;
+
+            h1 {
+                font-size: 5rem;
+            }
+        }
+
+        .main-content {
+           display: flex;
+           width: 100%;
+           justify-content: space-between;
+
+           .text-box {
+               width: 50%;
+               padding: 110px 25px 20px 25px;
+               color: white;
+           }
+
+           img {
+               width: 50%;
+               height: 90%;
+               padding: 37px 25px 20px 13px;
+               
+            }
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            padding: 42px;
+            
+            button {
+                width: 200px;
+                height: 50px;
+                .btn-rounded-edge;
+            }
+        }
+
+    }
+}
