@@ -161,12 +161,10 @@ p {
 }
 .main-header {
   display: flex;
-  border: 1px solid blue;
   justify-content: center;
   background-color: #202123;
 }
 .main-header .navigation {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -176,12 +174,11 @@ p {
   padding: 15px 50px;
 }
 .main-header .navigation .nav-logo img {
-  width: 40%;
+  width: 50%;
 }
 .main-header .navigation .main-nav {
   display: flex;
   align-items: center;
-  border: 1px solid red;
   width: 110%;
   justify-content: space-evenly;
 }
@@ -189,12 +186,57 @@ p {
   color: darkgrey;
   font-size: 1.5rem;
   text-decoration: none;
+  padding: 5px 15px;
+}
+.main-header .navigation .main-nav a:hover {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+.main-header .navigation .main-nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.main-header .navigation .main-nav .drop-content {
+  display: none;
+  position: absolute;
+  background-color: #202123;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px 0 0 0;
+  z-index: 1;
+  margin: 5px 0 0 -10px;
+}
+.main-header .navigation .main-nav .drop-content a {
+  color: darkgrey;
+  padding: 12px 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.main-header .navigation .main-nav .dropdown:hover .drop-btns {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+.main-header .navigation .main-nav .dropdown:hover .drop-content {
+  display: block;
+}
+.main-header .navigation .main-nav .drop-content a:hover {
+  background-color: #131415;
+  color: whitesmoke;
+  text-decoration: underline;
 }
 .main-header .navigation .main-nav .shop {
   padding: 5px 15px;
   border: 1px solid black;
   background-color: black;
   border-radius: 20px;
+}
+.main-header .navigation .main-nav .shop:hover {
+  background-color: lightgrey;
+  color: #202123;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: inset 0 0 5px 1px #0b6dce;
 }
 footer {
   color: #22283B;
@@ -239,7 +281,7 @@ body .container .main-content img {
 body .container .btn {
   display: flex;
   justify-content: center;
-  padding: 42px;
+  padding: 52px;
 }
 body .container .btn button {
   width: 200px;
