@@ -168,7 +168,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 70%;
+  width: 75%;
 }
 .main-header .navigation .nav-logo {
   padding: 15px 50px;
